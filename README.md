@@ -1,0 +1,2 @@
+# calculator
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5de8fa40df4042febd95076980c3c6c5)](https://app.codacy.com/manual/pitchounvivi/calculator?utm_source=github.com&utm_medium=referral&utm_content=pitchounvivi/calculator&utm_campaign=Badge_Grade_Dashboard)
