@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="bouton">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:onClick">touche</item>
+        <!--<item name="android:background">#fff8dc</item> pour afficher directement la couleur-->
+        <item name="android:background">@drawable/bouton</item> <!-- pour avoir une couleur spé-->
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="operation" parent="bouton">
+        <!--<item name="android:background">#6B6969</item>-->
+        <item name="android:background">@drawable/operation</item>
+    </style>
+
+    <style name="calcul" parent="bouton">
+        <item name="android:background">@drawable/calcul</item>
+    </style>
+
+</resources>

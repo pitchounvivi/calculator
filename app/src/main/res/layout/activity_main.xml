@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:columnCount="4"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#ABC1D1"
+    >
+
+
+
+    <EditText
+        android:id="@+id/etScreen"
+        android:layout_marginTop="20dp"
+        android:height="60dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="4"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical|right"
+        android:paddingRight="10dp"
+        />
+
+    <RadioGroup
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="4"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <RadioButton
+        android:id="@+id/rbEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:text="€"
+        android:onClick="convertirMonnaies"
+        android:checked="true"/>
+
+    <RadioButton
+        android:id="@+id/rbDollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:text="$"
+        android:onClick="convertirMonnaies"
+        />
+
+    <RadioButton
+        android:id="@+id/rbLivre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_columnWeight="1"
+        android:text="£"
+        android:onClick="convertirMonnaies"
+        />
+
+    <RadioButton
+        android:id="@+id/rbBitcoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="3"
+        android:layout_columnWeight="1"
+        android:text="B"
+        android:onClick="convertirMonnaies"
+        />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_columnWeight="4"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <RadioButton
+        android:id="@+id/rbDeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:text="deg"
+        android:onClick="convDegre"
+        android:checked="true"/>
+
+    <RadioButton
+        android:id="@+id/rbRad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:text="rad"
+        android:onClick="convRadian"/>
+
+    <RadioButton
+        android:id="@+id/rbGrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="2"
+        android:text="grd"
+        android:onClick="convGradian"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btEffacer"
+        style="@style/calcul"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="1"
+        android:text="@string/efface"
+        android:onClick="efface"/>
+
+
+    <Button
+        android:id="@+id/btDivision"
+        style="@style/operation"
+        android:layout_row="3"
+        android:layout_column="3"
+
+        android:onClick="touche"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/bouton"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/bouton"
+        android:text="8"/>
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/bouton"
+        android:text="9"/>
+
+    <Button
+        android:id="@+id/btMultiplication"
+        style="@style/operation"
+        android:layout_row="4"
+        android:layout_column="3"
+        android:text="*"
+        android:onClick="touche" />
+
+    <Button
+        android:id="@+id/bt4"
+        style="@style/bouton"
+        android:text="4"/>
+
+    <Button
+        android:id="@+id/bt5"
+        style="@style/bouton"
+        android:text="5"/>
+
+    <Button
+        android:id="@+id/bt6"
+        style="@style/bouton"
+        android:text="6"/>
+
+    <Button
+        android:id="@+id/btSoustraction"
+        style="@style/operation"
+        android:layout_row="5"
+        android:layout_column="3"
+        android:text="-"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/bt1"
+        style="@style/bouton"
+        android:text="1"/>
+
+    <Button
+        android:id="@+id/bt2"
+        style="@style/bouton"
+        android:text="2"/>
+
+    <Button
+        android:id="@+id/bt3"
+        style="@style/bouton"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/btAddition"
+        style="@style/operation"
+        android:layout_row="6"
+        android:layout_column="3"
+        android:text="+"
+        android:onClick="touche"/>
+
+    <Button
+        android:id="@+id/bt0"
+        style="@style/bouton"
+        android:text="0"/>
+
+    <Button
+        android:id="@+id/btVirgule"
+        style="@style/bouton"
+        android:text="."/>
+
+    <Button
+        android:id="@+id/btRésultat"
+        style="@style/calcul"
+        android:layout_width="180dp"
+        android:layout_columnSpan="2"
+        android:text="@string/result"
+        android:onClick="result"
+        />
+
+
+</GridLayout>

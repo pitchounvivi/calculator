@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculateur</string>
+    <string name="result">RESULTAT</string>
+    <string name="efface">EFFACER</string>
+</resources>
